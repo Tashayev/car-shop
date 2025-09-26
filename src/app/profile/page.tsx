@@ -1,5 +1,10 @@
+"use client"
 import "./profile.scss"
 export default function ProfilePage() {
+  async function handleLogout() {
+    await fetch("/api/auth/logout", { method: "POST" });
+    window.location.href = "/auth/login"; 
+  }
   return (
     <div className="profile-card">
       <div className='name'>
@@ -50,7 +55,9 @@ export default function ProfilePage() {
             Редактировать
           </button>
         </div>
+
       </div>
+      <button onClick={handleLogout}>Выйти</button>
     </div>
   )
 }
