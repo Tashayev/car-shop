@@ -1,0 +1,39 @@
+.auth-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;       
+  min-height: 100vh;         
+         
+      
+}
+.auth-page {
+  display: flex;
+  
+  max-width: 1200px; 
+  margin: auto; 
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  .child {
+    flex: 1.2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 0 40px;
+  }
+
+  .image {
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+}

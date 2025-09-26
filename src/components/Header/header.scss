@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 16px;
+
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+
+  .link-wrapper {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 12px 18px;
+  border-radius: 2px;
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d3541;
+  text-decoration: none;
+
+  svg {
+    fill: #fff;
+    stroke: #fff; 
+  }
+
+  &.active {
+    color: #fff;
+  }
+}
+
+
+  &.active-wrapper {
+    background-color: #0147ff;
+  }
+}
+
+}

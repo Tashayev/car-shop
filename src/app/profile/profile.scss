@@ -1,0 +1,85 @@
+.profile-card {
+  height: 100%;
+  width: 100%;
+
+  .profile {
+    display: flex;
+    gap: 32px;
+
+  }
+
+  @media screen and (width<640px) {
+    .profile {
+      flex-direction: column;
+
+    }
+
+    .form {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__avatar {
+    width: 203px;
+    height: 203px;
+    border-radius: 50%;
+    border: 1px solid #0147FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #aaa;
+
+  }
+
+  &__form-group {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+}
+
+.user {
+  width: 60px;
+  height: 72px;
+}
+
+.sub-btn {
+  background-color: #0147FF;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.form {
+  width: 45%
+}

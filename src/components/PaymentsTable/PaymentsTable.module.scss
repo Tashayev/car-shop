@@ -1,0 +1,62 @@
+.payments {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+  
+
+  table {
+    width: 100%;
+    min-width: 600px; 
+    border-collapse: collapse;
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      font-weight: 600;
+      color: #444;
+    }
+
+    td {
+      color: #555;
+    }
+  }
+
+  .status {
+    &.paid {
+      color: #22bb33;
+      font-weight: 600;
+    }
+
+    &.unpaid {
+      color: #ff3333;
+      font-weight: 600;
+    }
+  }
+
+  .progress {
+    height: 8px;
+    border-radius: 4px;
+    background: #eee;
+    overflow: hidden;
+
+    &-bar {
+      height: 100%;
+      background: #22bb33;
+    }
+  }
+
+  .action {
+    color: #0066ff;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

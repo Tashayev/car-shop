@@ -1,0 +1,19 @@
+.orders{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+@media screen and (width < 770px) {
+  .orders{
+  
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+}
+@media screen and (width < 640px) {
+  .orders{
+  
+  grid-template-columns: 1fr;
+  
+}
+}

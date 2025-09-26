@@ -1,0 +1,33 @@
+body {
+  background-color: #F5F7F9;
+  font-family: Inter;
+  margin: 0;
+  box-sizing: border-box;
+
+  .name {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+    .typography {
+      color: #2D3541;
+      font-size: 18px;
+      font-weight: 600;
+      
+
+    }
+
+    .blue {
+      width: 3px;
+      height: 19px;
+      background-color: #0147FF;
+    }
+  }
+}
+
+main {
+  padding: 0 32px;
+}
+h2, h5, h4, p{
+  margin: 0;
+}

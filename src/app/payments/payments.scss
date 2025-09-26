@@ -1,0 +1,55 @@
+.payments {
+  width: 100%;
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .table {
+    width: 100%;
+
+    .table-head {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      
+      color: #0147FF;
+      padding: 12px 0;
+      border-bottom: 1px solid #00000014;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    .table-body {
+      .table-row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 12px 0;
+        border-bottom: 1px solid #00000014;
+        font-size: 16px;
+        color: #010101;
+
+        
+        button {
+          padding: 8px 20px;
+          font-size: 18px;
+          border: none;
+          border-radius: 8px;
+          background: #010101;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.2s;
+          &.paid {
+            display: none;
+          }
+          &.unpaid {
+            display: block;
+          }
+
+          
+        }
+      }
+    }
+  }
+}

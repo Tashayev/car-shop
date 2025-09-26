@@ -1,0 +1,30 @@
+.broadcast {
+  position: relative;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .liveTag {
+    display: flex;
+    gap: 6px;
+    top: 12px;
+    left: 12px;
+    background: #0147FF;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+}
