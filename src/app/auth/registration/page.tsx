@@ -56,8 +56,9 @@ export default function RegisterPage() {
     if (!validate()) return;
 
     setLoading(true);
-
+    
     try {
+      console.log("Делаем fetch на /api/auth/registration");
       const res = await fetch("/api/auth/registration", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -77,7 +78,7 @@ export default function RegisterPage() {
     } finally {
       setLoading(false);
     }
-    console.log("📤 Отправляем:", {
+    console.log(" Отправляем:", {
       email: form.email,
       password: form.password,
       name: form.name,

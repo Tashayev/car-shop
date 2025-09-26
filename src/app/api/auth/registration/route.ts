@@ -6,6 +6,8 @@ import { hashPassword } from "../../../../lib/auth";
 import jwt from "jsonwebtoken";
 
 export async function POST(req: Request) {
+  console.log("API /api/auth/registration вызван");
+
   try {
     const body = await req.json();
     const { email, password, name } = body;
